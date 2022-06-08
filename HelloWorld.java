@@ -3,27 +3,14 @@
 
 class HelloWorld {
     public static void main(String[] args) {
-        System.out.println(RAJAN.rajan.getFirstName()); 
+        String rajan=RAJAN.rajan.toString();
+        System.out.println(rajan); 
     }
 }
 
  enum RAJAN{
-    rajan("Rajan","Sonvane",28),
-    sheerin("Sheerin","Sonvane",32),
-    Narjohn("John","Mesharam",34);
-    
-    String firstName;
-    String lastName;
-    int age;
-    
-    RAJAN(String firstName,String lastName,int age){
-        this.firstName= firstName;  
-        this.lastName= lastName;
-        this.age= age;
-    }
-    
-    public String getFirstName(){
-       return this.firstName;
-    }
+    rajan,
+    sheerin,
+    Narjohn;
     
 }
